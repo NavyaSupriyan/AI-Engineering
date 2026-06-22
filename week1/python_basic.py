@@ -18,7 +18,7 @@ x.insert(0, 3)
 #del statement allows to removes slices of a list or clear. Provide index or index range
 del x[0]
 del x[2:4] #(start to end-1 so value at 2, 3 deleted)
-del x #removes teh refernce to the object itself
+del x #removes the reference to the object itself
 
 
 #remove: Removes the first occurence of an element given its value
@@ -65,7 +65,7 @@ queue.popleft()
 
 #To create a list of squares from 0 to 5
 
-# map() acts as transformer -> takes and applies a dunction to each element of an iterable
+# map() acts as transformer -> takes and applies a function to each element of an iterable
 # lambda is a throwaway function; one line function; lambda input: expression
 square = list(map(lambda x: x**2, range(6))) 
 square = [x**2 for x in range(6)]
@@ -85,7 +85,7 @@ transposed = [[row[i] for row in matrix] for i in range(4)]
 #Create an empty tuple
 empty = ()
 
-#Create a tuple with only 1 value. With parenthesis without consider as the data type the vale is of
+#Create a tuple with only 1 value. With parenthesis it consider as the data type the of the value inside it
 singleton = "hello",
 singleton1 = ("hello",)
 
@@ -95,7 +95,7 @@ singleton1 = ("hello",)
 #Create an empty set
 empty = set()
 
-#Since unordered -> iterating can printing them can produce elements in diff order
+#Since unordered -> iterating can print elements in diff order
 fruits = {'banana', 'orange', 'banana', 'apple'}
 
 # ------------------------------- DICTIONARY ------------------------------------ #
@@ -115,7 +115,7 @@ for k, v in dict.items():
 
 # ------------------------------- LOOPING TECHNIQUES ------------------------------------ #
 
-#enumerate() usd to retreive the value and corresponding index at the same time
+#enumerate() used to retreive the value and corresponding index at the same time
 for i, v in enumerate(['ava', 'sam', 'lobo']):
     print(i, v)
 

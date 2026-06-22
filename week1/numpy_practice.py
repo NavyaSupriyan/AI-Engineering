@@ -101,7 +101,7 @@ print(b)
 #sum of each column
 print(b.sum(axis = 0))
 
-#min opf each row
+#min of each row
 print(b.min(axis = 1))
 
 # cumulative sum along each row
@@ -139,3 +139,26 @@ b[-1] # returns last row: b[-1, :] also b[-1, ...]
 
 for i in b.flat:
     print(i)
+
+# Mean of a matrix
+mat = np.array([1,2,3],[4,5,6])
+
+#overall mean
+print(np.mean(mat))
+
+#column wise mean
+print(np.mean(mat, axis = 0))
+
+#row wise mean
+print(np.mean(mat, axis = 1))
+
+#Median of a matrix
+
+#overall median
+print(np.median(mat))
+
+#column wise median
+print(np.median(mat, axis = 0))
+
+#row wise median
+print(np.median(mat, axis = 1))
